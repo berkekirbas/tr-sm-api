@@ -26,11 +26,11 @@
       "@interfaces/*": ["interfaces/*"],
       "@routes/*": ["routes/*"],
       "@utils/*": ["utils/*"],
-      "@keys/*": ["keys/*"]
+      "@keys/*": ["keys/*"],
+      "@middlewares/*": ["middlewares/*"]
       //"@controllers/*": ["controllers/*"],
       //"@dtos/*": ["dtos/*"],
       // "@exceptions/*": ["exceptions/*"],
-      //"@middlewares/*": ["middlewares/*"],
       //"@models/*": ["models/*"],
       //"@services/*": ["services/*"],
     }

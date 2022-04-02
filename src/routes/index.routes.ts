@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import Routes from '@/interfaces/routes.interface';
+import { allowedHttpMethod } from '@/middlewares/allowedHttpMethod.middleware';
 
 class IndexRoute implements Routes {
   public path = '/';
@@ -12,8 +13,11 @@ class IndexRoute implements Routes {
 
   // declare a routes method
   private initRoutes(): void {
-    this.router.get(`${this.path}`, (req, res) => {
-      res.send('Hello World!');
+    this.router.all(`${this.path}`, allowedHttpMethod(['GET']), (req, res) => {
+      res.json({
+        success: true,
+        message: 'Status = OK',
+      });
     });
   }
 }

@@ -61,6 +61,7 @@
     "helmet": "^5.0.2",
     "hpp": "^0.2.3",
     "jsonwebtoken": "^8.5.1",
+    "redirect-ssl": "^3.0.0",
     "spdy": "^4.0.2"
   }
 }

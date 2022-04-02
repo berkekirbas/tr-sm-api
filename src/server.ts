@@ -1,3 +1,7 @@
+/**
+ * @description This file contains the server logic.
+ */
+
 import spdy from 'spdy';
 import fs from 'fs';
 import path from 'path';
